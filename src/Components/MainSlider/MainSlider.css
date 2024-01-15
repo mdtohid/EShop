@@ -1,0 +1,159 @@
+.header {
+    position: relative;
+}
+
+.header .col-md-3,
+.header .col-md-6 {
+    margin-bottom: 30px;
+}
+
+.header .navbar {
+    padding: 0;
+    height: 100%;
+    /* max-height: 400px; */
+    overflow: hidden;
+    background: #ffffff !important;
+}
+
+.header .navbarNav {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header .navbar li {
+    padding: 10px 30px;
+    border-bottom: 1px solid #f3f6ff;
+}
+
+.header .navbar li:last-child {
+    border-bottom: none;
+}
+
+.header .navbar a {
+    color: #353535;
+    /* padding-block: 8px; */
+}
+
+.header .navbar a:hover {
+    color: #ffb000;
+}
+
+.header .navbar i {
+    color: #ffb000;
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+}
+.header .navbar .icon{
+    color: #ffb000;
+    width: 20px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+.header .navbar a:hover i {
+    color: #353535;
+}
+
+.header .navbar a:hover .icon {
+    color: #353535;
+}
+/* ........................................ */
+
+.headerSlider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.headerSlider .headerSliderItem {
+    position: relative;
+    
+}
+
+.headerSlider .headerSliderCaption {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 30%;
+    height: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(255, 111, 97, 0.7); */
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.headerSlider .headerSliderCaption p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 700;
+}
+
+.headerSlider .headerSliderCaption .btn .icon {
+    margin-right: 5px;
+}
+
+/* ..................................................... */
+
+.header .headerImg {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    /* max-height: 400px; */
+    /* height: 400px; */
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.header .imgItem {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.header .imgItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .imgText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 111, 97, 0.7);
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.header .imgText:hover {
+    opacity: 1;
+}
+
+.header .imgText p {
+    margin: 0 0 50px 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.header .imgText:hover p {
+    margin: 0;
+}

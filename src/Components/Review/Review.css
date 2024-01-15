@@ -1,0 +1,148 @@
+/**********************************/
+/*********** Review CSS ***********/
+/**********************************/
+.review {
+    margin-bottom: 30px;
+}
+
+.review .review-slider {
+    position: relative;
+}
+
+.review .review-slider-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: #ffffff;
+}
+
+.review .review-img {
+    width: 100%;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.review .review-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review .review-text {
+    padding: 15px;
+    width: 100%;
+    max-width: calc(100% - 200px);
+}
+
+.review .review-text h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.review .review-text h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.review .review-text p {
+    margin: 0;
+}
+
+.review .review-text .ratting {
+    margin-bottom: 5px;
+}
+
+.review .review-text .ratting i {
+    color: #ffb000;
+    font-size: 14px;
+}
+
+.review .slick-slider:hover .slick-prev {
+    left: 30px;
+}
+
+.review .slick-slider:hover .slick-next {
+    right: 30px;
+}
+
+
+/**********************************/
+/******* Normal Slider CSS ********/
+/**********************************/
+.normalSlider .slick-prev,
+.normalSlider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  opacity: 0!important;
+  transition: 0.5s;
+  background: rgba(255, 111, 97, 0.7);
+  border-radius: 4px;
+}
+
+.normalSlider .slick-prev {
+  left: 55px;
+}
+
+.normalSlider .slick-next {
+  right: 55px;
+}
+
+.normalSlider .slick-slider:hover .slick-prev {
+  left: 15px;
+  opacity: 1!important;
+}
+
+.normalSlider .slick-slider:hover .slick-next {
+  right: 15px;
+  opacity: 1!important;
+}
+
+.normalSlider .slick-prev:hover,
+.normalSlider .slick-prev:focus,
+.normalSlider .slick-next:hover,
+.normalSlider .slick-next:focus {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.normalSlider .slick-prev:hover::before,
+.normalSlider .slick-prev:focus::before,
+.normalSlider .slick-next:hover::before,
+.normalSlider .slick-next:focus::before {
+  color: #ffb000;
+}
+
+.normalSlider .slick-prev::before,
+.normalSlider .slick-next::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.normalSlider .slick-prev::before {
+  content: "\f104";
+}
+
+.normalSlider .slick-next::before {
+  content: "\f105";
+}
+
+.normalSlider .slick-dots {
+  bottom: 25px;
+}
+
+.normalSlider .slick-dots li button:before {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.normalSlider .slick-dots li.slick-active button:before {
+  color: #ffb000;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}

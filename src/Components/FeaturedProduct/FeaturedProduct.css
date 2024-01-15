@@ -1,0 +1,223 @@
+/**********************************/
+/******* Product Slider CSS ********/
+/**********************************/
+.productSlider .slick-prev,
+.productSlider .slick-next {
+    top: -65px !important;
+}
+
+.productSlider .slick-prev,
+.productSlider .slick-next {
+  /* top: -75px!important; */
+  width: 30px!important;
+  height: 30px!important;
+  z-index: 1!important;
+  transition: 0.5s!important;
+  color: #ffb000!important;
+  /* background: #ffffff!important; */
+  border: 1px solid #ffb000!important;
+  border-radius: 4px!important;
+}
+
+.productSlider .slick-prev {
+  left: calc(100% - 120px)!important;
+}
+
+.productSlider .slick-next {
+  right: 45px!important;
+}
+
+.productSlider .slick-prev:hover,
+.productSlider .slick-prev:focus,
+.productSlider .slick-next:hover,
+.productSlider .slick-next:focus {
+  background: #ffb000!important;
+}
+
+.productSlider .slick-prev::before,
+.productSlider .slick-next::before {
+  font-family: "Font Awesome 5 Free"!important;
+  font-size: 18px!important;
+  font-weight: 900!important;
+  color: #ffb000!important;
+}
+
+.productSlider .slick-prev::before {
+  content: "\f104"!important;
+}
+
+.productSlider .slick-next::before {
+  content: "\f105"!important;
+}
+
+.productSlider .slick-prev:hover::before,
+.productSlider .slick-prev:focus::before,
+.productSlider .slick-next:hover::before,
+.productSlider .slick-next:focus::before {
+  color: #ffffff!important;
+}
+
+.productSlider .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+  opacity: 1!important;
+}
+
+
+/**********************************/
+/******** Product Item CSS ********/
+/**********************************/
+.paddingRight {
+    position: relative;
+    padding-inline: 10px;
+  }
+  
+  .paddingRight .productTitle {
+    padding: 15px;
+    text-align: center;
+    background: #000000;
+    transition: all 0.3s;
+  }
+  
+  .paddingRight:hover .productTitle {
+    background: #ffb000;
+  }
+  
+  .paddingRight .productTitle a,
+  .paddingRight .productTitle .ratting {
+    position: relative;
+    width: 100%;
+  }
+  
+  .paddingRight .productTitle a {
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .paddingRight .productTitle .ratting .icon {
+    font-size: 14px;
+    color: #ffb000;
+    margin-right: 3px;
+  }
+  
+  .paddingRight .product-content .price span {
+    margin-left: 12px;
+    text-decoration: line-through;
+    font-weight: 700;
+    color: #999999;
+  }
+  
+  .paddingRight:hover .productTitle a,
+  .paddingRight:hover .productTitle .ratting .icon {
+    color: #ffffff;
+  }
+  
+  .paddingRight:hover .product-content .price span {
+    color: #dddddd;
+  }
+  
+  .paddingRight .productImage {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .paddingRight .productImage a {
+    display: block;
+    background: #ffffff;
+    transition: 0.3s;
+  }
+  
+  .paddingRight .productImage img {
+    width: 100%;
+    transition: all 0.3s;
+  }
+  
+  .paddingRight:hover .productImage img {
+    transform: scale(1.2);
+  }
+  
+  .paddingRight .productImage .productAction {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 111, 97, 0.5);
+    transition: all 0.3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .paddingRight:hover .productImage .productAction {
+    opacity: 1;
+  }
+  
+  .paddingRight .productImage .productAction a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 7px 0 10px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background: #ffb000;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all 0.3s;
+    margin-top: 50px;
+  }
+  
+  .paddingRight:hover .productImage .productAction a {
+    margin-top: 0;
+  }
+  
+  .paddingRight .productImage .productAction a:last-child {
+    margin-right: 0;
+  }
+  
+  .paddingRight .productImage .productAction a:hover {
+    color: #ffb000;
+    background: #ffffff;
+    border: 1px solid #ffb000;
+  }
+  
+  .paddingRight .productPrice {
+    padding: 20px;
+    background: #000000;
+    transition: all 0.3s;
+  }
+  
+  .paddingRight:hover .productPrice {
+    background: #ffb000;
+  }
+  
+  .paddingRight .productPrice h3 {
+    display: inline-block;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .paddingRight .productPrice h3 span {
+    font-size: 16px;
+  }
+  
+  .paddingRight .productPrice .btn {
+    float: right;
+    border: none;
+    color: #000000;
+    background: #ffb000;
+  }
+  
+  .paddingRight:hover .productPrice .btn,
+  .paddingRight .productPrice .btn:hover {
+    color: #ffb000;
+    background: #ffffff;
+  }
+  
+  .paddingRight .productPrice .btn .icon {
+    margin-right: 5px;
+  }
