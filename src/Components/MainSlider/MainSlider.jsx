@@ -7,6 +7,7 @@ import slider3 from '../../assets/slider-3.jpg';
 import category1 from '../../assets/category-1.jpg';
 import category2 from '../../assets/category-2.jpg';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 
 const MainSlider = () => {
 
@@ -19,52 +20,48 @@ const MainSlider = () => {
     }
 
     return (
-        <div className="header px-4 md:px-14">
+        <div className="header px-4 md:px-14 mt-[30px]">
             <div className="flex flex-col md:flex-row md:h-[400px] md:gap-8">
                 <div className="md:w-3/12">
                     <nav className="navbar">
                         <ul className="navbarNav">
                             <li className="">
-                                <a className="" href="#"
+                                <Link className="" to=''
                                 >
                                     <FontAwesomeIcon className='icon' icon={faHome}></FontAwesomeIcon>
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
+                                <Link className="" to=''
                                 >
                                     <FontAwesomeIcon className='icon' icon={faShoppingBag}></FontAwesomeIcon>
                                     Best Selling
-                                </a>
+                                </Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
-                                ><FontAwesomeIcon className='icon' icon={faPlusSquare}></FontAwesomeIcon>New Arrivals</a>
+                                <Link className="" to=''
+                                ><FontAwesomeIcon className='icon' icon={faPlusSquare}></FontAwesomeIcon>New Arrivals</Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
-                                ><FontAwesomeIcon className='icon' icon={faFemale}></FontAwesomeIcon>Fashion & Beauty</a
-                                >
+                                <Link className="" to=''
+                                ><FontAwesomeIcon className='icon' icon={faFemale}></FontAwesomeIcon>Fashion & Beauty</Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
-                                ><FontAwesomeIcon className='icon' icon={faChild}></FontAwesomeIcon>Kids & Babies Clothes</a
-                                >
+                                <Link className="" to=''
+                                ><FontAwesomeIcon className='icon' icon={faChild}></FontAwesomeIcon>Kids & Babies Clothes</Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
-                                ><FontAwesomeIcon className='icon' icon={faIcons}></FontAwesomeIcon>Men & Women Clothes</a
-                                >
+                                <Link className="" to=''
+                                ><FontAwesomeIcon className='icon' icon={faIcons}></FontAwesomeIcon>Men & Women Clothes</Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
-                                ><FontAwesomeIcon className='icon' icon={faMobileAlt}></FontAwesomeIcon>Gadgets & Accessories</a
-                                >
+                                <Link className="" to=''
+                                ><FontAwesomeIcon className='icon' icon={faMobileAlt}></FontAwesomeIcon>Gadgets & Accessories</Link>
                             </li>
                             <li className="">
-                                <a className="" href="#"
-                                ><FontAwesomeIcon className='icon' icon={faMicrochip}></FontAwesomeIcon>Electronics & Accessories</a>
+                                <Link className="" to=''
+                                ><FontAwesomeIcon className='icon' icon={faMicrochip}></FontAwesomeIcon>Electronics & Accessories</Link>
                             </li>
                         </ul>
                     </nav>
@@ -75,30 +72,30 @@ const MainSlider = () => {
                             <div className="headerSliderItem">
                                 <img className='w-full' src={slider1} alt="Slider Image" />
                                 <div className="headerSliderCaption">
-                                    <a className="btn bg-white hover:bg-[#ffb000] text-[#ffb000] hover:text-white hover:border border-white" href=""
+                                    <Link className="btn bg-white hover:bg-[#ffb000] text-[#ffb000] hover:text-white hover:border border-white" href=""
                                     >
                                         <FontAwesomeIcon className='icon' icon={faShoppingCart}></FontAwesomeIcon>
                                         Shop Now
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="headerSliderItem">
                                 <img className='w-full' src={slider2} alt="Slider Image" />
                                 <div className="headerSliderCaption">
-                                    <a className="btn bg-white hover:bg-[#ffb000] text-[#ffb000] hover:text-white hover:border border-white" href=""
+                                    <Link className="btn bg-white hover:bg-[#ffb000] text-[#ffb000] hover:text-white hover:border border-white" href=""
                                     >
                                         <FontAwesomeIcon className='icon' icon={faShoppingCart}></FontAwesomeIcon>
                                         Shop Now
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="headerSliderItem">
                                 <img className='w-full' src={slider3} alt="Slider Image" />
                                 <div className="headerSliderCaption">
-                                    <a className="btn bg-white hover:bg-[#ffb000] text-[#ffb000] hover:text-white hover:border border-white" href=""
+                                    <Link className="btn bg-white hover:bg-[#ffb000] text-[#ffb000] hover:text-white hover:border border-white" href=""
                                     ><FontAwesomeIcon className='icon' icon={faShoppingCart}></FontAwesomeIcon>
                                         Shop Now
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </Slider>
@@ -108,15 +105,15 @@ const MainSlider = () => {
                     <div className="headerImg">
                         <div className="imgItem">
                             <img src={category1} />
-                            <a className="imgText" href="">
+                            <Link className="imgText" href="">
                                 <p>Some text goes here that describes the image</p>
-                            </a>
+                            </Link>
                         </div>
                         <div className="imgItem">
                             <img src={category2} />
-                            <a className="imgText" href="">
+                            <Link className="imgText" href="">
                                 <p>Some text goes here that describes the image</p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

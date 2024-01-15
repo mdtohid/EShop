@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './BottomBar.css'
 import { faHeart, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const BottomBar = () => {
     return (
@@ -19,14 +20,14 @@ const BottomBar = () => {
                 </div>
                 <div className="">
                     <div className="flex gap-3">
-                        <a href="wishlist.html" className="btn hover:bg-[#ffb000] border border-[#ffb000] text-[#ffb000] hover:text-white">
+                        <Link to='' className="btn hover:bg-[#ffb000] border border-[#ffb000] text-[#ffb000] hover:text-white">
                             <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
                             <span className='ms-1'>(0)</span>
-                        </a>
-                        <a href="wishlist.html" className="btn hover:bg-[#ffb000] border border-[#ffb000] text-[#ffb000] hover:text-white">
+                        </Link>
+                        <Link to='' className="btn hover:bg-[#ffb000] border border-[#ffb000] text-[#ffb000] hover:text-white">
                             <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
                             <span className='ms-1'>(0)</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
