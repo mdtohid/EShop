@@ -22,8 +22,8 @@ const Navbar = () => {
                 <div className='hidden w-full md:flex space-x-4 justify-between'>
                     <div className='flex gap-3'>
                         <Link to='' className="text-white hover:text-black">HOME</Link>
-                        <Link to='' className="text-white hover:text-black">PRODUCTS</Link>
-                        <Link to='' className="text-white hover:text-black">PRODUCT DETAIL</Link>
+                        <Link to='/products' className="text-white hover:text-black">PRODUCTS</Link>
+                        <Link to='/product/100' className="text-white hover:text-black">PRODUCT DETAIL</Link>
                         <Link to='' className="text-white hover:text-black">CART</Link>
                         <Link to='' className="text-white hover:text-black">CHECKOUT</Link>
                         <Link to='' className="text-white hover:text-black">MY ACCOUNT</Link>

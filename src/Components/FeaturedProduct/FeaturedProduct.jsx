@@ -2,14 +2,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './FeaturedProduct.css'
-// import product1 from '../../assets/product-1.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus, faHeart, faSearch, faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
-// import { useEffect, useState } from 'react';
 import useProducts from '../../Hooks/useProducts';
-// import { faStar } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCartShopping, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const FeaturedProduct = () => {
     const products = useProducts();
